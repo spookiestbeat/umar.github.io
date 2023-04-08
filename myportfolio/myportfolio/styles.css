@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #333;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    min-height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover{
+    color: crimson;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+/* homepage */
+
+.image img {
+    width: 400px;
+    margin-top: 50px;
+    border: 10px white solid;
+    margin-right: 100px;
+}
+
+.homepage {
+    height: 100vh;
+    background-color: #333;
+}
+
+.main {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.info {
+    border-right: 10px solid crimson;
+    padding-right: 200px;
+}
+
+.info h1 {
+    color: crimson;
+    font-size: 75px;
+}
+
+.info h2 {
+    font-size: 60px;
+    color: white;
+}
+
+.info span {
+    font-size: 80px;
+    color: crimson;
+}
+
+.borderBottom {
+    border-top: 10px solid white;
+    margin-top: 100px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .main {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgba(220, 20, 60, 0.658);
+        z-index: 1;
+        width: 100%;
+        text-align:center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .image img {
+        width: 350px;
+        margin-right: 0px;
+    }
+
+
+    .info {
+        margin-top: 30px;
+        border: none;
+        width: 350px;
+        padding-right: 0;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: left;
+    }
+
+
+}
