@@ -34,6 +34,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
         ease: Expo.easeInOut,
       });
 
+
       TweenMax.staggerFrom(
         ".nav-menu li ",
         1.5,

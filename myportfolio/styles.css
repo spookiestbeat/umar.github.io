@@ -6,6 +6,12 @@
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #dc143c;
+  background-image: linear-gradient(0deg, #dc143c00 0%, #333333 67%);
+  
+}
+
 header {
   position: fixed;
 	top: 0;
@@ -58,7 +64,7 @@ a {
 }
 
 .nav-link:hover {
-  color: crimson;
+  color: #dc143c;
 }
 
 .hamburger {
@@ -88,7 +94,6 @@ a {
 .homepage {
   padding-top:150px ;
   height: 100vh;
-  background-color: #333;
 }
 
 .main {
@@ -130,7 +135,6 @@ a {
 .aboutMe {
   padding-top: 130px;
   height: 100vh;
-  background-color: #333;
 }
 
 .about-page {
@@ -146,29 +150,36 @@ a {
 
 .about-page p {
   font-size: 20px;
-  text-align: justify;
+  text-align:justify;
   color: white;
-  background-color: crimson;
+  background-color: #3333334d;
   padding: 20px;
   margin-bottom: 40px;
   margin-top: 40px;
+
+}
+
+.line-about {
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  background-color: white;
+  width: 100px;
+  height: 5px;
 }
 
 .skill-card {
   display: flex;
   align-items: center;
   gap: 40px;
-  
 }
 
-.skill {
-  background-color: crimson;
-}
 
 .skill img {
     padding-top: 40px;
     padding-bottom: 20px;
-    height: 200px;
+    height: 220px;
 }
 
 
@@ -242,7 +253,7 @@ a {
   }
 
   .aboutMe {
-    height: 230vh;
+    height: 200vh;
   }
 
   .skill-card {
