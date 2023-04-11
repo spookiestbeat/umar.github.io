@@ -54,6 +54,7 @@ a {
 
 .nav-link {
   transition: 0.7s ease;
+  display: block;
 }
 
 .nav-link:hover {
@@ -201,7 +202,10 @@ a {
     display: block;
   }
 
+
   .nav-menu {
+    display: flex;
+    margin-top: 50px;
     position: fixed;
     left: -100%;
     top: 70px;

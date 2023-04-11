@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <title>Portfolio</title>
@@ -54,7 +55,7 @@
       <div class="about-page">
         <h1>About Me</h1>
 
-        <p>
+        <p data-aos="zoom-in">
           I am a web developer and multimedia expert with a passion for creating
           engaging and interactive digital experiences. With several years of
           experience in the industry, I have developed a range of skills in web
@@ -68,7 +69,7 @@
         </p>
 
         <div class="skill-card">
-          <div class="skill">
+          <div class="skill"data-aos="fade-up">
               <img src="images\dhdhdh@72x.png" alt="pen-tool" />
               <p>
                 I am a web developer and multimedia expert with a passion for
@@ -78,7 +79,7 @@
               </p>
           </div>
 
-          <div class="skill">
+          <div class="skill" data-aos="fade-up">
             <img src="images\eryhdet@72x.png" alt="pen-tool" />
             <p>
               I am a web developer and multimedia expert with a passion for
@@ -88,7 +89,7 @@
             </p>
           </div>
 
-          <div class="skill">
+          <div class="skill" data-aos="fade-up">
             <img src="images\Asset 1@72x.png" alt="pen-tool" />
             <p>
               I am a web developer and multimedia expert with a passion for
@@ -104,6 +105,13 @@
         </div>
       </div>
     </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset: 400,
+      duration: 1000});
+    </script>
+    
 
     <script src="script.js"></script>
   </body>
