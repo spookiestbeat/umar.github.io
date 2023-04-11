@@ -215,6 +215,10 @@ a {
     transform: translateY(-8px) rotate(-45deg);
   }
 
+  .homepage {
+    padding-top: 100px;
+  }
+
   .main {
     display: block;
   }
