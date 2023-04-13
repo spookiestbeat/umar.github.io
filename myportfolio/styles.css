@@ -17,7 +17,7 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: #33333377;
+	background-color: #333333bd;
 	color: #fff;
 	padding: 10px;
   z-index: 1;
@@ -110,6 +110,7 @@ a {
 .info h1 {
   color: crimson;
   font-size: 75px;
+  text-align: left;
 }
 
 .info h2 {
@@ -170,7 +171,7 @@ a {
 .skill-card {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 50px;
 }
 
 
@@ -179,6 +180,61 @@ a {
     padding-bottom: 20px;
     height: 220px;
 }
+
+
+/* My Works */
+
+.gallery {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.gallery h1 {
+  padding-top: 40px;
+  color: white;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.col-md-4 img {
+  max-width: 100%;
+  height: 500px;
+  border:10px solid rgba(255, 255, 255, 0.452);
+}
+
+.col-md-4 {
+  padding: 10px;
+}
+
+.container-gallery {
+  margin-top: 50px;
+}
+
+.col-md-4 {
+  position: relative;
+  display: inline-block;
+}
+
+.image-text {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #030303;
+  font-size: 24px;
+  text-align: center;
+  background-color: rgba(220, 20, 60, 0.507);
+  padding: 5px;
+}
+
+
+
+/* footer */
+
+.footer-contents p {
+  padding-top: 15px;
+}
+
 
 .footer-contents {
   background-color: #333;
@@ -232,7 +288,7 @@ a {
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: rgba(220, 20, 60, 0.658);
+    background-color: #333333bd;
     z-index: 1;
     width: 100%;
     text-align: center;
@@ -270,5 +326,13 @@ a {
   .about-page {
     margin-right: 20px;
     margin-left: 20px;
+  }
+
+  .gallery {
+    text-align: center;
+  }
+
+  .row > div {
+    padding: 30px;
   }
 }

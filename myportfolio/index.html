@@ -8,17 +8,24 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+
     <title>Portfolio</title>
   </head>
 
   <body>
     <header>
       <nav class="navbar">
-        <a href="#homepage" class="title">Umar</a>
+        <a href="#homepage" class="title">Portfolio</a>
 
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="#" class="nav-link">Works</a>
+            <a href="#my-works" class="nav-link">My Works</a>
           </li>
           <li class="nav-item">
             <a href="#aboutMe" class="nav-link">About Me</a>
@@ -44,7 +51,7 @@
         <div class="info">
           <h1>Hello!</h1>
           <br />
-          <h2>I'm a developer<span>.</span></h2>
+          <h2>I'm a Umar Peerbux<span>.</span></h2>
         </div>
       </div>
 
@@ -90,9 +97,43 @@
       </div>
     </section>
 
+    <section class="gallery" id="my-works">
+      <h1 data-aos="fade-right">My Works</h1>
+      <span class="line-about" data-aos="fade-left"></span>
+      <div class="container-gallery">
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-4">
+            <a href="images\20220503_100458-3.jpg" data-fancybox="gallery">
+              <img src="images\20220503_100458-3.jpg" alt="Gallery Image 1" class="img-responsive">
+            </a>
+            <div class="image-text">Your Text Here</div>
+          </div>
+          <div class="col-md-4">
+            <a href="images\20230322_174807.jpg" data-fancybox="gallery">
+              <img src="images\20230322_174807.jpg" alt="Gallery Image 2" class="img-responsive">
+            </a>
+            <div class="image-text">Your Text Here</div>
+          </div>
+          <div class="col-md-4">
+            <a href="images\IMG_4088.jpg" data-fancybox="gallery">
+              <img src="images\IMG_4088.jpg" alt="Gallery Image 3" class="img-responsive">
+            </a>
+            <div class="image-text">Your Text Here</div>
+          </div>
+          <div class="col-md-4">
+            <a href="images\IMG_20230108_162722_714-2.jpg" data-fancybox="gallery">
+              <img src="images\IMG_20230108_162722_714-2.jpg" alt="Gallery Image 4" class="img-responsive">
+            </a>
+            <div class="image-text">Your Text Here</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer>
       <div class="footer-contents">
         <h2>© Umar Peerbux</h2>
+        <p>Unofficial - Unpublished Website</p>
       </div>
     </footer>
 

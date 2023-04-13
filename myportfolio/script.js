@@ -23,7 +23,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
       TweenMax.from(".hamburger", 1.5, {
         delay: 0,
         opacity: 0,
-        y: -600,
+        y: -400,
         ease: Expo.easeInOut,
       });
 
