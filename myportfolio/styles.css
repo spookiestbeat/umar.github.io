@@ -108,7 +108,7 @@ a {
 }
 
 .info h1 {
-  color: crimson;
+  color: rgb(20, 220, 187);
   font-size: 75px;
   text-align: left;
 }
@@ -197,7 +197,8 @@ a {
 }
 
 .col-md-4 img {
-  width: 400px;
+  max-width: 100%;
+  height: auto;
   border:10px solid rgba(255, 255, 255, 0.452);
 }
 
