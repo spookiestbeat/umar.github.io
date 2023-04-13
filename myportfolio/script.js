@@ -1,31 +1,17 @@
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+const navbarToggle = document.querySelector(".navbar-toggle");
+const navbarLinks = document.querySelector(".navbar-links");
 
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-})
+navbarToggle.addEventListener("click", () => {
+  navbarToggle.classList.toggle("active");
+  navbarLinks.classList.toggle("active");
+});
 
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
+document.querySelectorAll(".navbar-links").forEach(n => n.addEventListener("click", () => {
+  navbarToggle.classList.remove("active");
+  navbarLinks.classList.remove("active");
 }))
 
 /* animations */
-
-      TweenMax.from(".title", 1.5, {
-        delay: 0,
-        opacity: 0,
-        x: 600,
-        ease: Expo.easeInOut,
-      });
-
-      TweenMax.from(".hamburger", 1.5, {
-        delay: 0,
-        opacity: 0,
-        y: -400,
-        ease: Expo.easeInOut,
-      });
 
       TweenMax.from(".image", 1.5, {
         delay: 0.7,
@@ -34,9 +20,22 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
         ease: Expo.easeInOut,
       });
 
+      TweenMax.from(".navbar-logo", 1.5, {
+        delay: 0,
+        opacity: 0,
+        y: -600,
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.from(".navbar-toggle", 1.5, {
+        delay: 0.7,
+        opacity: 0,
+        y: -600,
+        ease: Expo.easeInOut,
+      });
 
       TweenMax.staggerFrom(
-        ".nav-menu li ",
+        ".navbar-links li ",
         1.5,
         {
           delay: 1,
@@ -67,3 +66,16 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
         y: 400,
         ease: Expo.easeInOut,
       });
+
+      /* hide inspect element */ 
+
+      $(document).bind("contextmenu",function(e) {
+        e.preventDefault();
+       });
+
+      $(document).keydown(function(e){
+        if(e.which === 123){
+           return false;
+        }
+    });
+
