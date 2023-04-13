@@ -197,7 +197,6 @@ a {
 }
 
 .col-md-4 img {
-  max-width: 100%;
   height: 500px;
   border:10px solid rgba(255, 255, 255, 0.452);
 }
