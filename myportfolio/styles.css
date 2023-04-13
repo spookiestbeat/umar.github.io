@@ -20,7 +20,6 @@ header {
 	background-color: #333333af;
 	color: #fff;
   z-index: 1;
-
 }
 
 .navbar {
@@ -29,8 +28,6 @@ header {
   align-items: center;
   color: #fff;
   padding: 0 20px;
-  margin-left: 300px;
-  margin-right: 300px;
   text-align: center;
   height: 90px;
 }
@@ -41,6 +38,12 @@ header {
   color: #fff;
   letter-spacing: 1px;
   text-transform: uppercase;
+  margin-left: 200px;
+}
+
+.navbar-logo a:hover{
+  color: #dc143c;
+  transition: 0.3s ease;
 }
 
 .navbar-links {
@@ -50,17 +53,18 @@ header {
   padding: 0;
   list-style: none;
   transition: 0.7s ease;
+  margin-right: 200px;
 }
 
 .navbar-links li {
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
 .navbar-links li a {
   font-size: 16px;
   text-decoration: none;
   color: #fff;
-  transition: 0.7s ease;
+  transition: 0.3s ease;
   text-transform: uppercase;
 }
 
@@ -71,6 +75,7 @@ header {
 .navbar-toggle {
   display: none;
   cursor: pointer;
+  margin-right: 20px;
 }
 
 .navbar-toggle span {
@@ -173,9 +178,9 @@ header {
 .skill-card {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   gap: 50px;
 }
-
 
 .skill img {
     padding-top: 40px;
@@ -185,8 +190,6 @@ header {
 
 
 /* My Works */
-
-
 
 .gallery {
   text-align: center;
@@ -223,7 +226,7 @@ header {
 
 .image-text {
   position: absolute;
-  top: 85%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #030303;
@@ -233,6 +236,75 @@ header {
   padding: 5px;
 }
 
+.image-link {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #030303;
+  font-size: 20px;
+  text-align: center;
+  background-color: rgba(250, 250, 250, 0.507);
+  padding: 5px;
+}
+
+.image-link a {
+  text-decoration: none;
+  color: #030303;
+}
+
+.image-link a:hover {
+  color: #dc143c;
+}
+
+/* contact */
+
+.page3 .contact-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+
+.info-contact{
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+.address{
+  padding-top: 40px;
+}
+
+.info-contact h1{
+  font-size: 60px;
+}
+
+.address p{
+  font-size: 25px;
+}
+
+.address h3{
+  padding-bottom: 5px;
+  text-decoration: underline;
+}
+
+.border_Bottom {
+  border-top: 10px solid white;
+  margin-top: 100px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.border_top {
+  border-top: 10px solid white;
+  margin-bottom: 100px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
 
 
 /* footer */
@@ -269,6 +341,10 @@ header {
 /* mobile */
 
 @media (max-width: 768px) {
+
+  .navbar-logo a {
+    margin-left: 0;
+  }
 
   .navbar {
     margin-left: 50px;
@@ -355,5 +431,31 @@ header {
 
   .row > div {
     padding: 30px;
+  }
+
+  .info-contact {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .border_Bottom {
+    border-top: 10px solid white;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .border_top {
+    border-top: 10px solid white;
+    margin-bottom: 100px;
+    margin-top: 150px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .page3 .contact-container{
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }

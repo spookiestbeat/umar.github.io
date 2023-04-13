@@ -27,13 +27,6 @@ document.querySelectorAll(".navbar-links").forEach(n => n.addEventListener("clic
         ease: Expo.easeInOut,
       });
 
-      TweenMax.from(".navbar-toggle", 1.5, {
-        delay: 0.7,
-        opacity: 0,
-        y: -600,
-        ease: Expo.easeInOut,
-      });
-
       TweenMax.staggerFrom(
         ".navbar-links li ",
         1.5,
