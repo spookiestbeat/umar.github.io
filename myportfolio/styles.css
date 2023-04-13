@@ -19,7 +19,7 @@ header {
 	width: 100%;
 	background-color: #333333af;
 	color: #fff;
-  z-index: 1;
+  z-index: 999;
 }
 
 .navbar {
@@ -54,6 +54,7 @@ header {
   list-style: none;
   transition: 0.7s ease;
   margin-right: 200px;
+  z-index: 999;
 }
 
 .navbar-links li {
@@ -263,7 +264,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   margin-left: 300px;
   margin-right: 300px;
 }
@@ -292,12 +292,6 @@ header {
   text-decoration: underline;
 }
 
-.border_Bottom {
-  border-top: 10px solid white;
-  margin-top: 100px;
-  margin-left: 250px;
-  margin-right: 250px;
-}
 
 .border_top {
   border-top: 10px solid white;
@@ -347,7 +341,7 @@ header {
   }
 
   .navbar {
-    margin-left: 50px;
+    width: 100%;
     margin-right: auto;
   }
 
@@ -436,15 +430,9 @@ header {
   .info-contact {
     margin-left: 0;
     text-align: left;
+    margin-bottom: 50px;
   }
 
-  .border_Bottom {
-    border-top: 10px solid white;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    margin-left: 25px;
-    margin-right: 25px;
-  }
 
   .border_top {
     border-top: 10px solid white;

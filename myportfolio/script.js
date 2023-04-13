@@ -26,7 +26,7 @@ document.querySelectorAll(".navbar-links").forEach(n => n.addEventListener("clic
         y: -600,
         ease: Expo.easeInOut,
       });
-
+      
       TweenMax.staggerFrom(
         ".navbar-links li ",
         1.5,
@@ -60,7 +60,7 @@ document.querySelectorAll(".navbar-links").forEach(n => n.addEventListener("clic
         ease: Expo.easeInOut,
       });
 
-      /* hide inspect element */ 
+      /*** hide inspect element 
 
       $(document).bind("contextmenu",function(e) {
         e.preventDefault();
@@ -71,4 +71,6 @@ document.querySelectorAll(".navbar-links").forEach(n => n.addEventListener("clic
            return false;
         }
     });
+
+    ***/
 
