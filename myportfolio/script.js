@@ -13,6 +13,10 @@ document.querySelectorAll(".navbar-links").forEach(n => n.addEventListener("clic
 
 /* animations */
 
+window.onload = function() {
+  // Your navbar initialization code here
+
+
       TweenMax.from(".image", 1.5, {
         delay: 0.7,
         opacity: 0,
@@ -60,9 +64,11 @@ document.querySelectorAll(".navbar-links").forEach(n => n.addEventListener("clic
         ease: Expo.easeInOut,
       });
 
-      /*** hide inspect element 
+    };
 
-      $(document).bind("contextmenu",function(e) {
+
+
+    /***  $(document).bind("contextmenu",function(e) {
         e.preventDefault();
        });
 
@@ -70,7 +76,26 @@ document.querySelectorAll(".navbar-links").forEach(n => n.addEventListener("clic
         if(e.which === 123){
            return false;
         }
-    });
+    }); ***/
 
-    ***/
+
+    /* page slide */
+
+    $(document).ready(function() {
+      // Listen for click event on a link with class "page-link"
+      $('.page-link').click(function(e) {
+        e.preventDefault();
+        var href = $(this).attr('href');
+    
+        // Slide out current page
+        $('.page').css('transform', 'translateX(-100%)');
+    
+        // Load new page and slide it in
+        setTimeout(function() {
+          $('.page').load(href + ' .page', function() {
+            $('.page').css('transform', 'translateX(0)');
+          });
+        }, 500);
+      });
+    });
 
